@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "E:\\node_project\\test"
+      ],
+      "command": "npx.cmd"
+    }
+  }
+}

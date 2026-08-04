@@ -1,0 +1,28 @@
+# Read the documentation before extending the defaults:
+# https://docs.searxng.org/admin/settings/
+
+use_default_settings: true
+
+server:
+  secret_key: "b1RgaKBH92I33ikTAapbgNnZCmAi1nGs"
+  image_proxy: true
+search:
+  safe_search: 0
+  formats:
+    - html
+    - json            # 必须保留 json，否则 API 返回 403
+  results_per_page: 10
+# 显式声明启用的引擎
+engines:
+  - name: baidu
+    engine: baidu
+    disabled: false
+    timeout: 10.0  # 国内引擎响应可能较慢，建议增加超时时间
+  - name: 360search
+    engine: 360search
+    disabled: false
+    timeout: 10.0
+  - name: sogou
+    engine: sogou
+    disabled: false
+    timeout: 10.0
