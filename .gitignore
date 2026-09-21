@@ -36,3 +36,7 @@ build/
 
 ### Docker Volumes ###
 scripts/docker/volumes/
+
+### Project ###
+mcp-server/src/main/resources/.env
+mcp-client/src/main/resources/.env
